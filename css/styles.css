@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --lato: 'Lato', sans-serif;
+    --blue: #0056D6;
+    --link: #6C768D;
+    --header-colors: #424242;
+    --body-colors: #5F5F5F;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--lato);
+}
+
+main{
+    background-image: url("./images/girl.png");
+    padding: 4rem 6rem 0 6rem;
+    background-size: cover;
+}
