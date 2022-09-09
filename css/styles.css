@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root{
-    --lato: 'Lato', sans-serif;
+    --inter: 'Inter', sans-serif;
     --blue: #0056D6;
     --link: #6C768D;
     --header-colors: #424242;
@@ -15,11 +15,134 @@
 }
 
 body{
-    font-family: var(--lato);
+    font-family: var(--inter);
 }
 
 main{
     background-image: url("./images/girl.png");
-    padding: 4rem 6rem 0 6rem;
+    padding: 2rem 6rem 0 6rem;
     background-size: cover;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-weight: bolder;
+    color: var(--blue);
+    font-size: 20px;
+}
+
+.navigation ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigation ul li{
+    padding: 0 2rem;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+.contact{
+    font-family: var(--inter);
+    font-size: 12px;
+    padding: 0.7rem 2.5rem;
+    border-radius: 50px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.main-text{
+    padding: 15rem 0rem 24rem 0rem;
+    width: 50%;
+}
+
+.main-text h2{
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--header-colors)
+}
+
+.main-text p{
+    margin-top: 1.5rem;
+    width: 67%;
+    line-height: 1.7rem;
+}
+
+.btns{
+    margin-top: 2rem;
+}
+
+.learn-more{
+    margin-left: 1.5rem;
+    font-family: var(--inter);
+    font-size: 12px;
+    padding: 0.7rem 2.5rem;
+    border-radius: 50px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.offers{
+    padding: 8rem 10rem;
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.info p{
+    margin-top: 1rem;
+    padding: 0rem 3rem;
+}
+
+.section-card{
+    width: 100%;
+    margin: auto;
+    background-color: var(--blue);
+    margin-top: 8rem;
+    border-radius: 30px;
+    padding: 6rem;
+}
+
+.section-card h3{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.section-card .percentages{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.percentage .number{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.percentage .number span{
+    border-bottom: 5px solid white;
+}
+
+.percentage .number-info{
+    margin-top: 2rem;
 }
