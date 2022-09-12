@@ -16,6 +16,7 @@
 
 body{
     font-family: var(--inter);
+    scroll-behavior: smooth;
 }
 
 main{
@@ -111,38 +112,80 @@ nav{
 }
 
 .section-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     margin: auto;
     background-color: var(--blue);
     margin-top: 8rem;
     border-radius: 30px;
-    padding: 6rem;
+    padding: 8rem;
 }
 
 .section-card h3{
     color: white;
-    font-size: 4rem;
-    text-align: center;
+    font-size: 3rem;
 }
 
 .section-card .percentages{
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: row;
+    margin-right: 0rem;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 11rem;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
+    place-items: center;
     color: white;
 }
 
+
 .percentage .number{
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .percentage .number span{
     border-bottom: 5px solid white;
+    font-size: 4.5rem;
+    font-weight: 500;
 }
 
 .percentage .number-info{
-    margin-top: 2rem;
+    margin-top: 1.5rem ;
 }
+
+.features-header{
+    text-align: center;
+}
+.features-header h2{
+    color: var(--header-colors);
+    font-size: 4rem;
+}
+.features-header p{
+    font-size: 1.4rem;
+    padding: 0 28rem;
+    margin-top: 2rem;
+    color: var(--body-colors);
+}
+
+.features-body{
+    margin: 5rem 10rem 0 10rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3rem;
+}
+.features-body .feature-header{
+    margin-top: 2rem;
+    color: var(--header-colors);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.features-body .feature-body{
+    color: var(--body-colors);
+    margin-top: 2rem;
+    line-height: 30px;
+}
+
